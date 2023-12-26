@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <label for="gambar">Kartun :</label>
+    <select id="gambar" onchange="image()">
+        <option id="img1">Dino</option>
+        <option id="img2">Elsa</option>
+        <option id="img3">Jessie</option>
+        <option id="img4">Masha</option>
+        <option id="img5">Patrick</option>
+        <option id="img6">Pocoyo</option>
+        <option id="img7">Timmy</option>
+    </select>
+    <br>
+    <img id="gambarpilih" width="400" style="margin-top: 20px;"/>
+    <script>
+        function image() {
+            let pilih = document.getElementById("gambar").value;
+            let gambarpilih = document.getElementById("gambarpilih");
+    
+            if (pilih == "Dino") {
+                gambarpilih.src = "img/dino.jpeg";
+                alert("foto dino");
+            } else if (pilih == "Elsa") {
+                gambarpilih.src = "img/elsa.jpeg";
+                alert("foto elsa");
+            } else if (pilih == "Jessie") {
+                gambarpilih.src = "img/jessie.jpeg";
+                alert("foto jessie");
+            } else if (pilih == "Masha") {
+                gambarpilih.src = "img/masha.jpeg";
+                alert("foto masha");
+            } else if (pilih == "Patrick") {
+                gambarpilih.src = "img/patrick.jpeg";
+                alert("foto patrick");
+            } else if (pilih == "Pocoyo") {
+                gambarpilih.src = "img/pocoyo.jpeg";
+                alert("foto pocoyo");
+            } else if (pilih == "Timmy") {
+                gambarpilih.src = "img/timmy.jpeg"
+                alert("foto timmy");
+            }
+        }
+    </script>
+</body>
+</html>

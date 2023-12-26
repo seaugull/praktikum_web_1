@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form Validation</h2>
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Pelanggan :</label>
+				<input type="text" name="nama" id="nama"/>
+			</div>
+			<div>
+				<label>Email :</label>
+				<input type="email" name="email" id="email"/>
+			</div>
+			<div>
+				<label>Jam Keberangkatan :</label>
+				<input type="time" name="jam" id="jam"/>
+			</div>
+            <div>
+				<label>Tujuan Keberangkatan :</label>
+				<input type="text" name="tujuan" id="tujuan" />
+			</div>
+            <div>
+				<label>Jumlah Tiket :</label>
+				<input type="number" name="tiket" id="tiket" />
+			</div>
+            <div>
+				<input type="submit" value="Submit" class="tombol">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var jam = document.getElementById("jam").value;
+        var tujuan = document.getElementById("tujuan").value;
+        var tiket = document.getElementById("tiket").value;
+		if (nama != "" && email!="" && alamat !="" && jam != "" && tujuan != "" && tiket !="") {
+			return true;
+        }else {
+			alert('Anda harus mengisi data dengan lengkap!');
+		}
+	}
+</script>
+</html>
